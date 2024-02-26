@@ -1,0 +1,156 @@
+body{
+  color: var(--black);
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+}
+
+.centerFlex{
+  display: flex;
+  align-items: center;
+}
+
+.app__container{
+  padding-left: 180px;
+  padding-right: 180px;
+  min-height: 100vh;
+}
+
+.app__dark{
+  background-color: var(--black);
+}
+
+.disablePadding{
+  margin-left: -180px;
+  margin-right: -180px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.app__headerFirstLine{
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  box-shadow: 0 4px 8px 0 rgba(57, 113, 164, 0.25);
+}
+
+.app__headerDark{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.app__headerRight{
+  font-weight: 400;
+  font-size: 18px;
+  align-items: center;
+}
+
+.app__headerTel{
+  margin-right: 65px;
+}
+
+.app__headerLink{
+  color: var(--black)
+}
+
+.whiteText{
+  color: var(--white)
+}
+
+.app__headerMail{
+  margin-right: 48px;
+}
+
+.app__themeSlider{
+  border-radius: 30px;
+  width: 55px;
+  height: 26px;
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: var(--main-blue);
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.sliderLight{
+  flex-direction: row;
+  transition: .4s;
+}
+
+.sliderDark{
+  flex-direction: row-reverse;
+  transition: .4s;
+}
+
+.themeSlider__point{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .app__container{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .disablePadding{
+    margin-left: -80px;
+    margin-right: -80px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media(max-width: 877px){
+  .app__container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .disablePadding{
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media(max-width: 768px){
+  .app__headerFirstLine{
+    height: 54px;
+  }
+  .app__themeSlider{
+    width: 47px;
+    height: 23px;
+  }
+  .themeSlider__point{
+    width: 17px;
+    height: 17px;
+  }
+  .app__container{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .disablePadding{
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .app__logo{
+    width: 52px;
+    height: 22px;
+  }
+}
+
+@media(max-width: 550px){
+  .app__headerLink{
+    display: none;
+  }
+}

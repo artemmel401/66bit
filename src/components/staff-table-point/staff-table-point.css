@@ -1,0 +1,59 @@
+.staffTable__el{
+  border-bottom: 1px solid var(--background-grey);
+  padding: 28px 12px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.staffTable__darkEl:hover{
+  background: var(--background-black);
+}
+
+.staffTable__whiteEl:hover{
+  background: var(--background-grey);
+}
+
+.table__name{
+  flex: 45%;
+}
+
+.table__position{
+  flex: 25%;
+}
+
+.table__phone{
+  flex: 28%;
+}
+
+.table__birthdate{
+  flex: 12%;
+}
+
+@media(max-width: 1024px){
+  .staffTable__el{
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .table__name, .table__position, .table__phone, .table__birthdate{
+    flex: none;
+    width: 170px;
+    margin-right: 10px;
+  }
+}
+
+@media(max-width: 877px){
+  .staffTable__el{
+    padding-left: 40px;
+    padding-right: 0;
+  }
+}
+
+@media(max-width: 768px){
+  .staffTable__el{
+    font-size: 12px;
+    padding-left: 25px;
+  }
+  .table__name, .table__position, .table__phone, .table__birthdate{
+    max-width: 110px;
+  }
+}

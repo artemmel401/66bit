@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://frontend-test-api.stk8s.66bit.ru/api/'

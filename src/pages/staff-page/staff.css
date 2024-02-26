@@ -1,0 +1,186 @@
+.staffList__filterBlock{
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.staffList__title{
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.staffList__filters{
+  align-items: center;
+}
+
+.staffList__search{
+  width: 100%;
+  border: 0.50px solid var(--grey);;
+  border-radius: 5px;
+  padding: 10px;
+  height: 43px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.staffList__search:focus{
+  border: 0.50px solid var(--main-blue);
+}
+
+.staffList__search::placeholder{
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--grey);
+}
+
+.staffList__selectedFilters{
+  background: var(--background-grey);
+  padding-top: 13px;
+  padding-bottom: 3px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.selectedFilters__title{
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.selectedFilters__filters{
+  flex-wrap: wrap;
+}
+
+.selectedFilters__filter{
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.selectedFilters__filter:not(:last-child){
+  margin-right: 24px;
+}
+
+.selectedFilters__filterText{
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.selectedFilters__search{
+  width: 146px;
+  height: 45px;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px 48px;
+  background: var(--main-blue);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.staffTable__head{
+  margin-bottom: 28px;
+}
+
+.staffTable__headName{
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--grey);
+}
+
+.staffTable__content{
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.mobileSearch{
+  display: none;
+}
+
+@media(max-width: 1024px){
+  .staffTable__head{
+    justify-content: space-between;
+  }
+  .staffList__staffTable{
+    overflow: auto;
+  }
+}
+
+@media(max-width: 877px){
+  .staffList__title{
+    font-size: 20px;
+  }
+  .staffTable__content{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .staffList__staffTable{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .staffTable__head{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media(max-width: 768px){
+  .mobileSearch{
+    display: block;
+    margin-top: 16px;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 34px;
+  }
+  .mobileSearch::placeholder{
+    font-size: 12px;
+  }
+  .desktopSearch{
+    display: none;
+  }
+  .staffList__search{
+    margin-bottom: 12px;
+  }
+  .staffList__filterBlock{
+    display: block;
+  }
+  .staffTable__head{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .staffTable__headName{
+    font-size: 10px;
+  }
+  .staffList__selectedFilters{
+    display: block;
+  }
+  .selectedFilters__content{
+    display: block;
+  }
+  .selectedFilters__title{
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .selectedFilters__search{
+    width: 100%;
+    font-size: 12px;
+  }
+  .selectedFilters__content{
+    margin-bottom: 16px;
+  }
+  .selectedFilters__filterText{
+    font-size: 12px;
+  }
+}
+
+.greyBackground{
+  background: var(--background-black);
+}
